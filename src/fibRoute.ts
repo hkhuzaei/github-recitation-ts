@@ -1,5 +1,4 @@
 // Endpoint for querying the fibonacci numbers
-
 import express, { Request, Response } from "express";
 import { fibonacci } from "./fib";
 
@@ -18,3 +17,4 @@ router.get("/fib/:n", (req: Request, res: Response) => {
 });
 
 export default router;
+

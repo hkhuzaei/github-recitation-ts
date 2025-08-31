@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.fibonacci = fibonacci;
+// util function that computes the fibonacci numbers
+//module.exports = function fibonacci(n) {
+function fibonacci(n) {
+    if (n < 0) {
+        return -1;
+    }
+    else if (n == 0) {
+        return 0;
+    }
+    else if (n == 1) {
+        return 1;
+    }
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+//# sourceMappingURL=fib.js.map
