@@ -13,8 +13,8 @@ router.get("/fib/:n", (req: Request, res: Response) => {
     return;
   }
 
-  const result: number = fibonacci(n);
-  res.send(`Fibonacci of ${n} is ${result}`);
+  const result = fibonacci(n);
+  res.send(`fibonacci(${n}) is ${result}`);
 });
 
 export default router;
